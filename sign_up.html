@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="MobileOptimized" content="320">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"> 
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <!--slide--> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/ani.css">
+<style type="text/css">
+  .login-box .mini-box{
+    min-height: 348px;
+  }
+</style>
+</head>
+<body class="color-log over-hh">
+ 
+  <div class="container-fluid login-box h-100 p-0">
+    <div class="row justify-content-center p-0 m-0">
+      <h4><span class="ani-logo">&lt;</span>  Code With Yd<span class="ani-logo-2">/</span><span class="ani-logo-2">&gt;</span></h4>
+    </div>
+    <div class="container-fluid mini-box">
+      <form>
+       <!--User-->
+              <div class="control-group pt-my">
+                <div class="controls">
+                  <input class="col-12 border-0 form-control bg-user" name="email" placeholder="Username" type="text"> 
+                </div>
+              </div>
+       <!--Email-->
+              <div class="control-group pt-3">
+                <div class="controls">
+                  <input class="col-12 border-0 form-control bg-mail" name="email" placeholder="E-Mail" type="email"> 
+                </div>
+              </div>       
+       <!--Password-->
+              <div class="control-group pt-3">
+                <div class="controls">
+                  <input class="col-12 border-0 form-control bg-pass" name="password" placeholder="Password" type="password"> 
+                </div>
+              </div>   
+              <a href="#" class="float-right">Forget Password?</a>
+       <!--btn-->
+            <div class="control-group mt-5">
+              <div class="controls">
+                <button type="button" class="col-12 submit btn btn-success">Sign Up</button>
+              </div>
+            </div>    
+
+            <h6>
+                Already have an account?<br>
+                <span><a href="#">Login</a></span>
+            </h6>
+ 
+      </form>
+  </div>
+
+
+  </div>
+
+  
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+    /*email*/
+      $("#email").focus(function(){
+          $(".email").css("margin-top", "-22px").fadein(1000);
+      });
+      $("#email").focusout(function(){
+        if($("#email").val().length > 0)
+              {
+                  $(".email").css("margin-top", "-22px").fadein(1000);
+                  return false;
+              }
+          $(".email").css("margin-top", "3px").fadein(1000);
+      });
+
+      /*password*/
+      $("#password").focus(function(){
+          $(".password").css("margin-top", "-22px").fadein(1000);
+      });
+      $("#password").focusout(function(){
+        if($("#password").val().length > 0)
+              {
+                  $(".password").css("margin-top", "-22px").fadein(1000);
+                  return false;
+              }
+          $(".password").css("margin-top", "3px").fadein(1000);
+      });
+  </script>
+</body>
+</html>
